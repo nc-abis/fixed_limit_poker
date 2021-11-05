@@ -8,10 +8,10 @@ from utils.handValue import getHandPercent
 
 
 # your bot class, rename to match the file name
-class Abots(BotInterface):
+class Bbots(BotInterface):
 
     # change the name of your bot here
-    def __init__(self, name="Abots"):
+    def __init__(self, name="Bbots"):
         '''init function'''
         super().__init__(name=name)
 
@@ -30,7 +30,7 @@ class Abots(BotInterface):
         if stage == Stage.PREFLOP:
             return self.handlePreFlop(observation)
 
-        return Action.CALL
+        return Action.CHECK
 
     def bestCardsOnHandRatio(self, observation: Observation) -> float:
         handPercent, bestPossibleHand = getHandPercent(observation.myHand, observation.boardCards)

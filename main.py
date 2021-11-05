@@ -2,6 +2,8 @@ from environment.observers.LoggingObserver import LoggingObserver
 from environment.FixedLimitPoker import FixedLimitPoker
 from bots import TemplateBot, CounterBot, PercentBot
 from bots.abots import Abots
+from bots.bbots import Bbots
+from bots.cbots import Cbots
 from bots.RaiseBot import RaiseBot
 import pandas as pd
 import itertools
@@ -22,6 +24,8 @@ def benchmark():
     bots = [
         # Change the bots here to change the participants
         Abots(),
+        Bbots(),
+        Cbots(),
         CounterBot(),
         PercentBot(),
         RaiseBot(),

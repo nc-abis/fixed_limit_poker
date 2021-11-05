@@ -8,10 +8,10 @@ from utils.handValue import getHandPercent
 
 
 # your bot class, rename to match the file name
-class Abots(BotInterface):
+class Cbots(BotInterface):
 
     # change the name of your bot here
-    def __init__(self, name="Abots"):
+    def __init__(self, name="Cbots"):
         '''init function'''
         super().__init__(name=name)
 
@@ -26,9 +26,6 @@ class Abots(BotInterface):
 
         if (hand > 0.4 and ratio < 0.20) or (hand > 0.8 and ratio < 0.33):
             return Action.FOLD
-
-        if stage == Stage.PREFLOP:
-            return self.handlePreFlop(observation)
 
         return Action.CALL
 
