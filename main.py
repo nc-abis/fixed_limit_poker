@@ -2,6 +2,7 @@ from environment.observers.LoggingObserver import LoggingObserver
 from environment.FixedLimitPoker import FixedLimitPoker
 from bots import TemplateBot, CounterBot, PercentBot
 from bots.abots import Abots
+from bots.RaiseBot import RaiseBot
 import pandas as pd
 import itertools
 
@@ -10,9 +11,9 @@ def debug():
     observers = [LoggingObserver()]
     env = FixedLimitPoker([
         # Change the bots here to change the participants
-        PercentBot(),
+        RaiseBot(),
         Abots()
-    ], observers=observers, punishSlowBots=True)
+    ], observers=observers, punishSlowBots=False)
     env.reset()
     env.reset(rotatePlayers=True)
 
@@ -20,9 +21,10 @@ def debug():
 def benchmark():
     bots = [
         # Change the bots here to change the participants
+        Abots(),
         CounterBot(),
         PercentBot(),
-        Abots(),
+        RaiseBot(),
         TemplateBot()
     ]
     combinations = list(itertools.combinations(bots, 2))
@@ -45,5 +47,5 @@ def benchmark():
     print(stats)
 
 
-# benchmark()
 benchmark()
+#debug()
