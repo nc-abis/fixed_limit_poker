@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb6899a-9f7a-4b32-a67f-36b6f4f1b238" name="Default Changelist" comment="Best bot!">
-      <change afterPath="$PROJECT_DIR$/bots/RaiseBot.py" afterDir="false" />
+    <list default="true" id="dfb6899a-9f7a-4b32-a67f-36b6f4f1b238" name="Default Changelist" comment="Better ratios bot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bots/abots.py" beforeDir="false" afterPath="$PROJECT_DIR$/bots/abots.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636129469465</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Better ratios bot">
+      <created>1636134643746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636134643746</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created bot" />
     <MESSAGE value="Best bot!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Best bot!" />
+    <MESSAGE value="Better ratios bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better ratios bot" />
   </component>
 </project>

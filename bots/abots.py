@@ -19,13 +19,15 @@ class Abots(BotInterface):
     def act(self, action_space: Sequence[Action], observation: Observation) -> Action:
         stage = observation.stage
 
+        ratio = self.bestCardsOnHandRatio(observation)
+
         if stage == Stage.PREFLOP:
             return self.handlePreFlop(observation)
 
-        if self.bestCardsOnHandRatio(observation) < 0.20:
+        if ratio < 0.20:
             return Action.FOLD
 
-        if self.bestCardsOnHandRatio(observation) > 0.33:
+        if ratio > 0.33:
             return Action.RAISE
 
         return Action.CALL
